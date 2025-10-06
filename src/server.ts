@@ -12,7 +12,7 @@ async function main() {
 
     await mongoose.connect(mongouri); 
     app.listen(port, () => {
-      console.log(`Example app listening on port ${port}`);
+      console.log(`Example app listening on port http://localhost:${port}`)
     });
   } catch (err) {
     console.error("Error connecting to MongoDB or starting server:", err);
